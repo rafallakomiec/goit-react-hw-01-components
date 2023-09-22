@@ -1,13 +1,24 @@
 {
   "name": "goit-react-hw-01-components",
-  "private": false,
   "version": "1.0.0",
   "type": "module",
+  "description": "",
+  "homepage": "https://rafallakomiec.github.io/goit-react-hw-01-components/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafallakomiec/goit-react-hw-01-components.git"
+  },
+  "keywords": [],
+  "author": "Rafał Łakomiec <rafal.lakomiec@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafallakomiec/goit-react-hw-01-components/issues"
   },
   "dependencies": {
     "clsx": "^1.2.1",
@@ -24,5 +35,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "vite": "^4.3.9"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
