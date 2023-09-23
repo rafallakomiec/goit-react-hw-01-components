@@ -1,13 +1,19 @@
 import css from './Profile.module.css';
 import PropTypes from 'prop-types';
 
-function Profile({ username, tag, location, avatar, stats: { followers, views, likes } }) {
+const Profile = function ({
+  username,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) {
   return (
     <div className={css.profile}>
       <div className={css.description}>
         <img src={avatar} alt="User avatar" className={css.avatar} />
         <p className={css.name}>{username}</p>
-        <p className={css.tag}>{tag}</p>
+        <p className={css.tag}>@{tag}</p>
         <p className={css.location}>{location}</p>
       </div>
 
@@ -27,7 +33,7 @@ function Profile({ username, tag, location, avatar, stats: { followers, views, l
       </ul>
     </div>
   );
-}
+};
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,

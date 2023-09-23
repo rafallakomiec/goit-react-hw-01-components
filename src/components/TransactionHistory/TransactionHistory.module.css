@@ -1,0 +1,35 @@
+.transactionHistory {
+  font-family: Roboto, Arial, sans-serif;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 50px auto;
+  padding: 0;
+  border-color: gray;
+  border-width: 1px;
+  box-shadow: 2px 2px 1px 4px lightblue;
+  min-width: 500px;
+  line-height: 2;
+  border-collapse: collapse;
+}
+
+.tableHead th {
+  color: white;
+  background-color: turquoise;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid 1px black;
+}
+
+.tableBody td {
+  border: solid 1px black;
+}
+
+.tableBody tr:nth-child(2n + 1) {
+  background-color: white;
+}
+
+.tableBody tr:nth-child(2n) {
+  background-color: lightgray;
+}
