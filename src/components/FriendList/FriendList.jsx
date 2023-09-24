@@ -2,7 +2,7 @@ import css from './FriendList.module.css';
 import PropTypes from 'prop-types';
 import FriendListItem from '../FriendListItem/FriendListItem.jsx';
 
-const FriendList = function ({ friends }) {
+const FriendList = ({ friends }) => {
   const friendItems = friends.map((friend, index) => {
     return (
       <FriendListItem
@@ -19,7 +19,14 @@ const FriendList = function ({ friends }) {
 };
 
 FriendList.propTypes = {
-  friends: PropTypes.array.isRequired,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool,
+      id: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default FriendList;

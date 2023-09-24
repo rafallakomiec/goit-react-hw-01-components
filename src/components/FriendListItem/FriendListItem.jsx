@@ -1,7 +1,7 @@
 import css from './FriendListItem.module.css';
 import PropTypes from 'prop-types';
 
-const FriendListItem = function ({ avatar, name, isOnline, friendId }) {
+const FriendListItem = ({ avatar, name, isOnline, friendId }) => {
   const statusStyle = {
     backgroundColor: isOnline ? 'green' : 'red',
   };
@@ -17,9 +17,9 @@ const FriendListItem = function ({ avatar, name, isOnline, friendId }) {
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string,
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool,
-  friendId: PropTypes.number,
+  friendId: PropTypes.number.isRequired,
 };
 
 export default FriendListItem;
